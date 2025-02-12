@@ -1,7 +1,7 @@
 Battle Robots
 =============
 
-![FLUX.1 dev a small wheeled robot battling a small tracked robot using a large hammer. cute. plain white background.](https://github.com/user-attachments/assets/c908910f-2950-48f1-916e-acf093aec98f)
+![FLUX.1 dev a small wheeled robot battling a small tracked robot using a large hammer. cute. plain white background.](https://github.com/user-attachments/assets/4a8b1445-0e2b-4b33-ad16-e0cb1f330ef1)
 
 
 - Create a ZapBot class that implements a new `get_attacks` method. This should apply 1 damage to all bots adjacent to us.
