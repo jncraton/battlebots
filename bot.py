@@ -146,7 +146,7 @@ class BattleArena:
                 actions = bot.get_actions(self.obstacles, self.bots)
                 has_moved = False
 
-                # Execute actions
+                # Execute a single valid move
                 for action in actions:
                     if isinstance(action, Move) and has_moved == False:
                         dxdy_map = {
@@ -164,11 +164,14 @@ class BattleArena:
                             bot.y = new_y
                             bot.facing = action.direction
                             has_moved = True
-                    if isinstance(action, Attack):
-                        attacks.append(action)
-                        for bot in self.bots:
-                            if bot.x == action.x and bot.y == action.y:
-                                bot.hp -= action.damage
+
+                if has_moved == False:
+                    for action in actions:
+                        if isinstance(action, Attack):
+                            attacks.append(action)
+                            for bot in self.bots:
+                                if bot.x == action.x and bot.y == action.y:
+                                    bot.hp -= action.damage
 
             self.render(attacks)
 
