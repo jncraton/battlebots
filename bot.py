@@ -45,7 +45,7 @@ class BattleBot:
     def get_possible_moves(self):
         return ["north", "south", "east", "west"]
 
-    def get_actions(self):
+    def get_actions(self, obstacles=[], bots=[]):
         """Simple AI to move randomly"""
         return [Move(random.choice(self.get_possible_moves()))]
 
@@ -67,7 +67,7 @@ class SuperBot:
 
 
 class AngryBot(SuperBot):
-    def get_actions(self):
+    def get_actions(self, obstacles=[], bots=[]):
         """Always attack"""
         return self.get_attacks()
 
@@ -135,7 +135,7 @@ class BattleArena:
             attacks = []
             # Process each bot's turn
             for bot in self.bots:
-                actions = bot.get_actions()
+                actions = bot.get_actions(self.obstacles, self.bots)
                 has_moved = False
 
                 # Execute actions
