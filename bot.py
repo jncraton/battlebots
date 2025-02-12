@@ -39,6 +39,10 @@ class BattleBot:
     def get_possible_moves(self):
         return ["north", "south", "east", "west"]
 
+    def get_attacks(self):
+        """ Returns all Attacks for this bot """
+        return []
+
     def get_actions(self, obstacles=[], bots=[]):
         """
         Returns a list of `Actions` to perform in one simulation step
