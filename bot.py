@@ -52,7 +52,7 @@ class BattleBot:
         :param obstacles: List of (x, y) tuples that are not pathable
         :param bots: List of all bots in the simulation
         :return: List of `Actions` to perform
-        
+
         This implementation is a simple AI to move randomly
         """
         return [Move(random.choice(self.get_possible_moves()))]
