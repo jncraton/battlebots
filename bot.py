@@ -100,7 +100,7 @@ class BattleArena:
     def is_valid_position(self, x, y):
         return (x, y) not in self.obstacles
 
-    def render(self):
+    def render(self, attacks):
         """Text-based display"""
         grid = [[" " for _ in range(self.width)] for _ in range(self.height)]
 
@@ -108,10 +108,14 @@ class BattleArena:
         for x, y in self.obstacles:
             grid[y][x] = "#"
 
+        # Add attacks
+        for attack in attacks:
+            grid[attack.y][attack.x] = 'x'
+
         # Add bots
         for bot in self.bots:
             if 0 <= bot.x < self.width and 0 <= bot.y < self.height:
-                grid[bot.y][bot.x] = bot.name if bot.hp > 0 else "X"
+                grid[bot.y][bot.x] = bot.name
 
         # Print grid with borders
         for row in grid:
@@ -127,8 +131,8 @@ class BattleArena:
                 print(f"{bot.name} HP: {bot.hp}")
             if any(b.hp <= 0 for b in self.bots):
                 break
-            self.render()
 
+            attacks = []
             # Process each bot's turn
             for bot in self.bots:
                 actions = bot.get_actions()
@@ -153,9 +157,12 @@ class BattleArena:
                             bot.facing = action.direction
                             has_moved = True
                     if isinstance(action, Attack):
+                        attacks.append(action)
                         for bot in self.bots:
                             if bot.x == action.x and bot.y == action.y:
                                 bot.hp -= action.damage
+
+            self.render(attacks)
 
             time.sleep(0.2)
             round_num += 1
