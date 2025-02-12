@@ -118,7 +118,7 @@ class BattleArena:
 
         # Add attacks
         for attack in attacks:
-            grid[attack.y][attack.x] = 'x'
+            grid[attack.y][attack.x] = "x"
 
         # Add bots
         for bot in self.bots:
