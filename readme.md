@@ -14,10 +14,14 @@ After completing this lab, students will be able to:
 - Create classes that inherit from one another
 - Leverage multiple inheritance
 
-Task
-----
+Tasks
+-----
 
-Handout code is provided in [bot.py](bot.py). It includes a number of failing test for new features. These features should be added to make the tests pass:
+Handout code is provided in [bot.py](bot.py). It includes a number of failing tests for new features. These features should be added to make the tests pass:
+
+- Our bots need to be able to `Move` and `Attack`. Create a `Move` class the extends `Action`. `Move` should have a single attribute, `direction` that can be set as the single parameter of the constructor.
+
+- Create an `Attack` class that also extends `Action`. An attack represents damage to be applied at a particular positions. Attacks have `x`, `y`, and `damage` attributes that can be set in that order using the constructor.
 
 - Create a `ZapBot` class that implements a new `get_attacks` method. This should apply 1 damage to all bots adjacent to us:
 
