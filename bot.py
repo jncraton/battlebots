@@ -46,7 +46,15 @@ class BattleBot:
         return ["north", "south", "east", "west"]
 
     def get_actions(self, obstacles=[], bots=[]):
-        """Simple AI to move randomly"""
+        """
+        Returns a list of `Actions` to perform in one simulation step
+
+        :param obstacles: List of (x, y) tuples that are not pathable
+        :param bots: List of all bots in the simulation
+        :return: List of `Actions` to perform
+        
+        This implementation is a simple AI to move randomly
+        """
         return [Move(random.choice(self.get_possible_moves()))]
 
 
