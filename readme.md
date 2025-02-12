@@ -32,10 +32,8 @@ Battle Robots
 - Create a SuperBot class that inherits from the 3 others and performs all three attacks simultaneously.
 
 ```
- 🔥
- 🔥
-⚡🔨⚡
-⚡🤖⚡
+⚡⚡⚡
+⚡🤖🔨🔥🔥🔥
 ⚡⚡⚡
 ```
 
