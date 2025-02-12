@@ -178,6 +178,23 @@ class BattleArena:
             time.sleep(0.2)
             round_num += 1
 
+print("Testing Move...")
+m = Move("north")
+assert isinstance(m, Action)
+assert m.direction == "north"
+m = Move("east")
+assert m.direction == "east"
+
+print("Testing Attack...")
+a = Attack(1, 2, 3)
+assert isinstance(a, Action)
+assert a.x == 1
+assert a.y == 2
+assert a.damage == 3
+a = Attack(4, 5, 6)
+assert a.x == 4
+assert a.y == 5
+assert a.damage == 6
 
 print("Testing ZapBot...")
 z = ZapBot("Test", 2, 2)
