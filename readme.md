@@ -19,7 +19,7 @@ Task
 
 Handout code is provided in [bot.py](bot.py). It includes a number of failing test for new features. These features should be added to make the tests pass:
 
-- Create a ZapBot class that implements a new `get_attacks` method. This should apply 1 damage to all bots adjacent to us.
+- Create a `ZapBot` class that implements a new `get_attacks` method. This should apply 1 damage to all bots adjacent to us:
 
 ```
 ⚡⚡⚡
@@ -27,7 +27,7 @@ Handout code is provided in [bot.py](bot.py). It includes a number of failing te
 ⚡⚡⚡
 ```
 
-- Create a SmashBot class that implements a new `get_attacks` method. This should apply 5 damage to the bot on the space directly in front of us.
+- Create a `SmashBot` class that implements a new `get_attacks` method. This should apply 5 damage to the bot on the space directly in front of us:
 
 ```
 🔨
@@ -36,7 +36,7 @@ Handout code is provided in [bot.py](bot.py). It includes a number of failing te
 🤖🔨
 ```
 
-- Create a FlameBot class that implements a new `get_attacks` method. This should apply 3 damage to any bots up to 3 spaces directly in front of us.
+- Create a `FlameBot` class that implements a new `get_attacks` method. This should apply 3 damage to any bots up to 3 spaces directly in front of us:
 
 ```
 🔥
@@ -47,7 +47,7 @@ Handout code is provided in [bot.py](bot.py). It includes a number of failing te
 🤖🔥🔥🔥
 ```
 
-- Create a SuperBot class that inherits from `ZapBot`, `SmashBot`, and `FlameBot` that performs all three attacks simultaneously.
+- Create a `SuperBot` class that inherits from `ZapBot`, `SmashBot`, and `FlameBot` that performs all three attacks simultaneously:
 
 ```
 ⚡⚡⚡
