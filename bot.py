@@ -15,11 +15,7 @@ class Attack(Action):
     a position on the board
     """
 
-    def __init__(self, x, y, damage):
-        self.x = x
-        self.y = y
-        self.damage = damage
-
+    pass
 
 class Move(Action):
     """A move action
@@ -28,9 +24,7 @@ class Move(Action):
     directions
     """
 
-    def __init__(self, direction):
-        self.direction = direction
-
+    pass
 
 class BattleBot:
     """A Battling Robot"""
