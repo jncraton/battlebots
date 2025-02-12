@@ -286,7 +286,7 @@ if __name__ == "__main__":
         arena.add_obstacle(random.randint(1, 3), random.randint(3, 6))
         arena.add_obstacle(random.randint(3, 6), random.randint(1, 3))
 
-    arena.bots = [MyBot("B", 1, 1), AngryBot("C", 2, 2)]
+    arena.bots = [MyBot("B", 1, 1), AngryBot("A", 2, 2)]
 
     try:
         arena.run_simulation()
