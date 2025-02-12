@@ -259,10 +259,10 @@ if __name__ == "__main__":
     arena = BattleArena(8, 8)
 
     # Add obstacles
-    for _ in range(3):
-        x = random.randint(2, 12)
-        y = random.randint(2, 7)
-        arena.add_obstacle(x, y)
+    for _ in range(2):
+        arena.add_obstacle(random.randint(3, 6), random.randint(3, 6))
+        arena.add_obstacle(random.randint(1, 3), random.randint(3, 6))
+        arena.add_obstacle(random.randint(3, 6), random.randint(1, 3))
 
     arena.bots = [MyBot("B", 1, 1), AngryBot("C", 2, 2)]
 
