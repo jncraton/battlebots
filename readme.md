@@ -51,7 +51,7 @@ Handout code is provided in [bot.py](bot.py). It includes a number of failing te
 
 ```
 ⚡⚡⚡
-⚡🤖🔨🔥🔥🔥
+⚡🤖🔨🔥🔥
 ⚡⚡⚡
 ```
 
