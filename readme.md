@@ -58,4 +58,4 @@ Handout code is provided in [bot.py](bot.py). It includes a number of failing te
 Optional Task
 -------------
 
-Once the classes are implemented, bots will battle in a simulated arena. The `MyBot` simply moves randomly. Adjust the `MyBot` class so that it defeats the `CratonBot` that is a `SuperBot` constantly attacking.
+Once the classes are implemented, bots will battle in a simulated arena. The `MyBot` simply moves randomly. Adjust the `MyBot` class so that it defeats the `AngryBot` that is a `SuperBot` constantly attacking.
