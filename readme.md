@@ -47,7 +47,7 @@ Handout code is provided in [bot.py](bot.py). It includes a number of failing te
 🤖🔥🔥🔥
 ```
 
-- Create a SuperBot class that inherits from the 3 others and performs all three attacks simultaneously.
+- Create a SuperBot class that inherits from `ZapBot`, `SmashBot`, and `FlameBot` that performs all three attacks simultaneously.
 
 ```
 ⚡⚡⚡
@@ -55,3 +55,7 @@ Handout code is provided in [bot.py](bot.py). It includes a number of failing te
 ⚡⚡⚡
 ```
 
+Optional Task
+-------------
+
+Once the classes are implemented, bots will battle in a simulated arena. The `MyBot` simply moves randomly. Adjust the `MyBot` class so that it defeats the `CratonBot` that is a `SuperBot` constantly attacking.
