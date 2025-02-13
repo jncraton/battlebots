@@ -59,6 +59,14 @@ Handout code is provided in [bot.py](bot.py). It includes a number of failing te
 ⚡⚡⚡
 ```
 
+Coordinates
+-----------
+
+Bots operate on a [Cartesian coordinate system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system). The top left of our simulated world is at 0,0. All valid positions are positive. This is the same system used in many other tools, such as the [HTML Canvas element](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes).
+
+![Canvas coordinate system](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes/canvas_default_grid.png)
+
+
 Optional Task
 -------------
 
